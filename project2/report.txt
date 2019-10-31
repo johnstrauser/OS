@@ -1,0 +1,97 @@
+Brian Schillaci
+John Strauser
+
+1. Detailed logic of how you implemented each API functions and scheduler
+	my_pthread_create()
+	
+		
+	my_pthread_yield()
+	
+		
+	my_pthread_exit()
+			
+		
+	my_pthread_join()
+		
+		
+	my_pthread_mutex_init()
+		
+		
+	my_pthread_mutex_lock()
+		
+		
+	my_pthread_mutex_unlock()
+		
+		
+	my_pthread_mutex_destroy()
+		
+		
+	schedule()
+		
+		
+	sched_stcf()
+		
+		
+	sched_mlfq()
+		
+		
+2. Benchmark results of your thread library with different configurations of thread number.
+	SJF:	
+	./parallelCal 4
+		2026 micro-seconds, correct output
+	./parallelCal 16
+		2034 micro-seconds, correct output
+	./parallelCal 64
+		2041 micro-seconds, correct output
+	./parallelCal 256
+		2050 micro-seconds, correct output
+		
+	./vectorMultiply 4
+		28 micro-seconds, correct output
+	./vectorMultiply 16
+		33 micro-seconds, correct output
+	./vectorMultiply 64
+		88 micro-seconds, correct output
+	./vectorMultiply 256
+		75 micro-seconds, correct output
+	
+	./externalCal 4
+		6174 micro-seconds, correct output
+	./externalCal 16
+		6188 micro-seconds, correct output
+	./externalCal 64
+		6190 micro-seconds, correct output
+	./externalCal 256
+		6245 micro-seconds, correct output
+	
+	MLFQ:
+	./parallelCal 4
+		1993 micro-seconds, correct output
+	./parallelCal 16
+		1986 micro-seconds, correct output
+	./parallelCal 64
+		1985 micro-seconds, correct output
+	./parallelCal 256
+		1991 micro-seconds, correct output
+		
+	./vectorMultiply 4
+		27 micro-seconds, correct output
+	./vectorMultiply 16
+		30 micro-seconds, correct output
+	./vectorMultiply 64
+		73 micro-seconds, correct output
+	./vectorMultiply 256
+		256 micro-seconds, correct output
+	
+	./externalCal 4
+		6077 micro-seconds, correct output
+	./externalCal 16
+		6114 micro-seconds, correct output
+	./externalCal 64
+		6078 micro-seconds, correct output
+	./externalCal 256
+		6093 micro-seconds, correct output
+		
+3. A short analyses of benchmark result and compare your thread library with pthread library.
+	 
+	
